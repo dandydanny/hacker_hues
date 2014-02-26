@@ -26,11 +26,29 @@ th {
   color: orange;
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 4em;
-  font-weight: 100;
+.nav {
+  background-color: navy;
+  color: white;
+  opacity: 0.5;
+  height: 3em;
+  width: 100%;
 }
+
+.nav h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  margin: 0;
+
+  float: left;
+}
+
+.nav span {
+  float: right;
+}
+
+
 
 /*
 available font weights:
