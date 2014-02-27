@@ -65,7 +65,7 @@ th {
 .user-tool {
   /*overflow: hidden;*/
   float: right;
-  width: 36em;
+  width: 27em;
   height: 1.5em;
 }
 
@@ -97,10 +97,6 @@ th {
   position: absolute;
   top: -10em;
   z-index: 5;
-}
-
-.user-tool {
-  width: 36em;
 }
 
 #logout-form {
