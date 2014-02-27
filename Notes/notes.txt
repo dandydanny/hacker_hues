@@ -1,0 +1,7 @@
+danny@dbc.com
+a@b.io
+clark.kent@superman.io
+hello_kitty@cat.org
+help$dbc.com
+help@dbc,com
+help@dbc

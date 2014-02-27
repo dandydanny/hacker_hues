@@ -3,11 +3,9 @@ post '/login' do
   p @user
   p params[:password]
   if @user.password == params[:password]
-    puts "------------ pword match -------------------"
     session[:user_id] = @user.id
     redirect("/user/#{@user.id}")
   else
-    puts "------------ pword not match -------------------"
     redirect('/')
   end
 end

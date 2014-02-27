@@ -1,7 +1,14 @@
 <div class="container">
-  <h1><%= @user.email %>, I've Been Expecting You</h1>
+  <h1>Hello <%= @user.email %></h1>
+
+  <hr>
+  <h2><%= @user.email %>'s Posts:</h2>
+  <% @user.posts.each do |post| %>
+    <p><a href="/post/<%= post.id %>"><%= post.title %></a></p>
+    <p><%= post.created_at %></p>
+  <% end %>
+  <hr>
 
   <p>@DandyDanny's customized sinatra skeleton.</p>
-
 
 </div>

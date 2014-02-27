@@ -1,0 +1,21 @@
+<div class="container">
+
+  <div>
+    <form id="new-post" action="/new_post" method="POST">
+    <input type="text" name="title" placeholder="Title"><br>
+    <input type="text" name="url" placeholder="URL"><br>
+    <textarea name="text" placeholder="Your thoughts on this post"></textarea><br>
+    <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div>
+    Title: <%= @post.title %><br>
+    URL: <%= @post.url %><br>
+    By: <%= @post.user.email %><br>
+    Time: <%= @post.created_at %><br>
+    <hr>
+    Text: <%= @post.text %><br>
+
+  </div>
+</div>
