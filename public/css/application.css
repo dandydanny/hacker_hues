@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: rgba(240,240,240,1);
 }
 .container {
   margin: 20px auto;
@@ -16,6 +17,7 @@ th {
   margin: 20px auto;
   width: 600px;
   text-align: center;
+  font-size: 0.8em;
 }
 
 .footer a {
@@ -31,6 +33,8 @@ th {
   opacity: 0.8;
   height: 2em;
   width: 100%;
+  background-color: rgba(255,255,255,0.9);
+  overflow: hidden;
 }
 
 .colors {
@@ -43,24 +47,63 @@ th {
   background: -ms-linear-gradient(left, #a90329 0%,#005068 20%,#27ed00 40%,#f3f700 60%,#c90404 80%,#4e00d6 100%); /* IE10+ */
   background: linear-gradient(to right, #a90329 0%,#005068 20%,#27ed00 40%,#f3f700 60%,#c90404 80%,#4e00d6 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#4e00d6',GradientType=1 ); /* IE6-9 */
+  z-index: 10;
 }
 
 .nav h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 2.6em;
+  font-style: italic;
   line-height: 2em;
-  letter-spacing: 0.5em;
-  font-weight: 300;
-  margin: 0 0 0 1em;
+  letter-spacing: -0.1em;
+  font-weight: 100;
+  margin: -0.65em 0 0 1em;
 
   float: left;
 }
 
-.nav span {
+.user-tools {
+  /*overflow: hidden;*/
   float: right;
+  width: 36em;
+  height: 1.5em;
+}
+
+.login-section {
+  /*float: right;*/
+}
+
+.login-field {
+  height: 1em;
+  font-size: 0.8em;
+  width: 10em;
 }
 
 
+
+.user-button {
+  border: none;
+  background: none;
+  font-size: 0.8em;
+  opacity: 0.7;
+  padding: 0 1em;
+}
+
+.user-button:hover {
+  background-color: orange;
+  opacity: 1;
+}
+
+#login-form{
+  position: absolute;
+  z-index: 5;
+}
+
+#signup-form {
+  position: absolute;
+  top: -10em;
+  z-index: 5;
+}
 
 /*
 available font weights:

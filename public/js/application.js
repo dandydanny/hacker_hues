@@ -5,4 +5,16 @@ $(document).ready(function() {
   // when we try to bind to them
 
   // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $("#create-user-button").click(function(event){
+    console.log("event fired");
+    event.preventDefault();
+    $("#login-form").animate({top:"-10em"});
+    $("#signup-form").animate({top:"0.1em"});
+  });
+
+  $("#login-user-button").click(function(event){
+    event.preventDefault();
+    $("#signup-form").animate({top:"-10em"});
+    $("#login-form").animate({top:"0.1em"});
+  });
 });
