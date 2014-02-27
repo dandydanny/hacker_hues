@@ -14,7 +14,7 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <!-- Mah face! -->
-  <link rel="icon" href="favicon128.png" sizes="128x128">
+  <link rel="icon" href="/favicon128.png" sizes="128x128">
   <script src="/js/jquery-2.1.0.min.js"></script>
   <script src="/js/application.js"></script>
 
@@ -26,8 +26,20 @@
     <div class="colors"></div>
     <h1>HACKr HUES</h1>
 
-    <div class="user-tools">
-      <div class="login-section">
+    <div class="user-section">
+
+
+      <% if @user %>
+
+      <div class="user-tool">
+        <form id="logout-form" action="/logout" method="GET">
+          <label><i class="fa fa-user"></i><%= @user.email %></label><button class="user-button"><i class="fa fa-lock"></i></button>
+        </form>
+      </div>
+
+      <% else %>
+
+      <div class="user-tool">
         <form id="login-form" action="/login" method="POST">
           <button class="user-button" id="create-user-button"><i class="fa fa-plus"></i></button>
           <label>Log in:</label>
@@ -45,6 +57,9 @@
           <button class="user-button" type="submit"><i class="fa fa-arrow-right"></i></button>
         </form>
       </div>
+
+      <% end %>
+
     </div>
 
   </div>

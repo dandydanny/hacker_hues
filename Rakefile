@@ -112,9 +112,8 @@ namespace :db do
     require APP_ROOT.join('db', 'seeds.rb')
   end
 
-  desc "Drop, create, migrate, and seed the DB."
-  task :reset do
-    task :reset => [:drop, :create, :migrate, :seed] do
+  desc "Drop, Create, Migrate, and Seed the DB"
+  task :reset => [:drop, :create, :migrate, :seed] do
   end
 
   desc "Returns the current schema version number"

@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   # has_secure_password
 
   #users.password_hash in the database is a :string
-  include Bcrypt
+  include BCrypt
 
   def password
     @password ||= Password.new(password_hash)

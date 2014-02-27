@@ -62,15 +62,11 @@ th {
   float: left;
 }
 
-.user-tools {
+.user-tool {
   /*overflow: hidden;*/
   float: right;
   width: 36em;
   height: 1.5em;
-}
-
-.login-section {
-  /*float: right;*/
 }
 
 .login-field {
@@ -78,8 +74,6 @@ th {
   font-size: 0.8em;
   width: 10em;
 }
-
-
 
 .user-button {
   border: none;
@@ -105,6 +99,14 @@ th {
   z-index: 5;
 }
 
+.user-tool {
+  width: 36em;
+}
+
+#logout-form {
+  text-align: right;
+  padding-right: 1em;
+}
 /*
 available font weights:
 100,100italic,300,300italic,400,400italic,
