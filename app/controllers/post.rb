@@ -1,4 +1,4 @@
-get '/posts/' do
+get '/posts' do
   @user = User.find(session[:user_id])
   @posts = Post.all
   erb :all_posts

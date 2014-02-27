@@ -1,14 +1,19 @@
 <div class="container">
-  <h1>Hello <%= @user.email %></h1>
+
+  <% if @user.id == session[:user_id] %>
+    <h1><%= @user.email %>'s User Profile (That's You!)</h1>
+    <h2>Your Posts:</h2>
+  <% else %>
+    <h1><%= @user.email %>'s User Profile</h1>
+    <h2><%= @user.email %>'s Posts:</h2>
+  <% end %>
 
   <hr>
-  <h2><%= @user.email %>'s Posts:</h2>
+
+
   <% @user.posts.each do |post| %>
     <p><a href="/post/<%= post.id %>"><%= post.title %></a></p>
     <p><%= post.created_at %></p>
   <% end %>
-  <hr>
-
-  <p>@DandyDanny's customized sinatra skeleton.</p>
 
 </div>
